@@ -1,657 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width;"/>
-      <title>Christopher Wynne</title>
-   </head>
-   <body>
-      <header>
-
-        <script type="module" src="index.js"></script>
-        <link rel="stylesheet" href="style.css">
-
-         <a href="#" class="logo">Wynne</a>
-         <ul class="nav" id="myTopnav">
-            <li ><a href="#about">About</a></li>
-            <li ><a href="#project_title">Projects</a></li>
-            <!--<li ><a href="#skills">Skills</a></li>-->
-            <li class="navbarwords"><a href="#connect">Lets Connect!</a></li>
-         </ul>
-      </header>
-      
-      
-      
-      
-
-      <section class="home-section">
-         <img src="./img/stars.png" alt="Stars overlay" id="stars">
-         <img src="./img/moon.png" alt="Moon" id="moon">
-         <!-- Shooting Star animations -->
-         <span class="shooting_stars"></span>
-         <span class="shooting_stars"></span>       
-         <span class="shooting_stars"></span>     
-         <span class="shooting_stars"></span>        
-         <span class="shooting_stars"></span>
-         <span class="shooting_stars"></span>       
-         <span class="shooting_stars"></span>     
-         <span class="shooting_stars"></span>
-         <span class="shooting_stars"></span>     
-         <span class="shooting_stars"></span>
-         <!--------------------------->
-         <img src="./img/mountainback.png" alt="Mountains back" id="mountains_back">
-         <a href="#about" id="btn-letsgo">Explore!</a>
-         <img src="./img/mountainfront.png" alt="Mountains front" id="mountains_front">
-      </section>
-
-
-      <!-- ----- ABOUT SECTION ----- -->
-      <section class="about-section" >
-         <!--       Floating Stars in ABOUT section        -->
-         <div class="jscanvas">
-            <canvas class="webgl"></canvas>
-         </div>
-
-
-         <!----------------BLACK BOX SECTION----------------->
-         <div class="blackbox" id="about">
-          
-            <h2 id="aboutMe">About</h2>
-
-
-            <div class="float-container">
-
-              <div class="float-child">
-                <div class="green">
-
-                  <div id="about_left">
-
-                    <div class="float-grand-child">
-                        <img src="./img/about.png" alt="about icon" id="about_icon" class="reveal fade-profile-left">
-                        <!--<canvas class="webgl"></canvas>-->
-                    </div>
-
-                    <div class="float-grand-child">
-                      <div class="welcome_portfolio ">
-                        Welcome to my Portfolio
-                      </div>
-                      <div class="typing_text_container">
-                        <h1>My name is <span class="auto_type"></span></h1>
-                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                      </div>
-                      <P>
-                        Fully committed to the philosophy of life-long learning, I am a Computer Infomation Systems major from UofSC.
-                        I am an aspiring web developer with a deep pasion for JavaScript, 3JS, and all things web development. 
-                        I find the idea of unique combinations of creativity, logic, and never running out of new things to discover quite fascinating,
-                        <span class="auto_type2"></span>
-                      </P>
-                    </div>
-
-                  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;" />
+    <title>Christopher Wynne</title>
+  </head>
+  <body>
+    <header>
+      <script type="module" src="index.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <a href="#" class="logo">Wynne</a>
+      <ul class="nav" id="myTopnav">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#project_title">Projects</a>
+        </li>
+        <!--<li ><a href="#skills">Skills</a></li>-->
+        <li class="navbarwords">
+          <a href="#connect">Lets Connect!</a>
+        </li>
+      </ul>
+    </header>
+    <section class="home-section">
+      <img src="./img/stars.png" alt="Stars overlay" id="stars">
+      <img src="./img/moon.png" alt="Moon" id="moon">
+      <!-- Shooting Star animations -->
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <span class="shooting_stars"></span>
+      <!--------------------------->
+      <img src="./img/mountainback.png" alt="Mountains back" id="mountains_back">
+      <a href="#about" id="btn-letsgo">Explore!</a>
+      <img src="./img/mountainfront.png" alt="Mountains front" id="mountains_front">
+    </section>
+    <!-- ----- ABOUT SECTION ----- -->
+    <section class="about-section">
+      <!--       Floating Stars in ABOUT section        -->
+      <div class="jscanvas">
+        <canvas class="webgl"></canvas>
+      </div>
+      <!----------------BLACK BOX SECTION----------------->
+      <div class="blackbox" id="about">
+        <h2 id="aboutMe">About</h2>
+        <div class="float-container">
+          <div class="float-child">
+            <div class="green">
+              <div id="about_left">
+                <div class="float-grand-child">
+                  <img src="./img/about.png" alt="about icon" id="about_icon" class="reveal fade-profile-left">
                 </div>
-              </div>
-              
-
-
-
-              <div class="float-child">
-                <div class="blue">
-                  
-                  <div id="about_right">
-                    <!--<img src="./img/skills.png" alt="skills icon" id="skills_icon">-->
-      
-                    <div class="wrapper"><!--WRAPPER-->
-    
-                      <div class="one reveal fade-bottom">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/js_icon.png" alt="js icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">JAVASCRIPT</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="two reveal fade-bottom2">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/c_icon.png" alt="c icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">C++</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="three reveal fade-bottom3">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/maven.png" alt="maven icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">MAVEN</span>
-                          </div>
-                        </div>
-                      </div>
-        
-
-
-
-
-
-
-                      <div class="four reveal fade-bottom4">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/3js_icon.png" alt="3js icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">3JS</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="five reveal fade-bottom5">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/css_icon.png" alt="css icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">CSS</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="six reveal fade-bottom6">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/react_icon.png" alt="react icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">REACT</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="seven reveal fade-bottom7">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/git_icon.png" alt="git icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">GIT</span>
-                          </div>
-                        </div>
-                      </div>
-        
-
-
-
-
-
-
-
-                      <div class="eight reveal fade-bottom8">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/html_icon.png" alt="html icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">HTML</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="nine reveal fade-bottom9">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/java_icon.png" alt="java icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">JAVA</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="ten reveal fade-bottom10">
-                        <div class="module-border-wrap">
-                          <div class="module">
-                            <img src="./img/gradle.png" alt="gradle icon" class="icons">
-                            <br>
-                            <span class="icon_box_text">GRADLE</span>
-                          </div>
-                        </div>
-                      </div>
-        
-                    </div><!--End of Wrapper-->
-
+                <div class="float-grand-child">
+                  <div class="welcome_portfolio "> Welcome to my Portfolio </div>
+                  <div class="typing_text_container">
+                    <h1>My name is <span class="auto_type"></span>
+                    </h1>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                  </div>
+                  <P> Fully committed to the philosophy of life-long learning, I am a Computer Infomation Systems major from UofSC. I am an aspiring web developer with a deep pasion for JavaScript, 3JS, and all things web development. I find the idea of unique combinations of creativity, logic, and never running out of new things to discover quite fascinating, <span class="auto_type2"></span>
+                  </P>
                 </div>
               </div>
             </div>
-
-
+          </div>
+          <div class="float-child">
+            <div class="blue">
+              <div id="about_right">
+                <div class="wrapper">
+                  <!--WRAPPER-->
+                  <div class="one reveal fade-bottom">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/js_icon.png" alt="js icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">JAVASCRIPT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="two reveal fade-bottom2">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/c_icon.png" alt="c icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">C++</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="three reveal fade-bottom3">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/maven.png" alt="maven icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">MAVEN</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="four reveal fade-bottom4">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/3js_icon.png" alt="3js icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">3JS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="five reveal fade-bottom5">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/css_icon.png" alt="css icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="six reveal fade-bottom6">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/react_icon.png" alt="react icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">REACT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seven reveal fade-bottom7">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/git_icon.png" alt="git icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">GIT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="eight reveal fade-bottom8">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/html_icon.png" alt="html icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">HTML</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nine reveal fade-bottom9">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/java_icon.png" alt="java icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">JAVA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ten reveal fade-bottom10">
+                    <div class="module-border-wrap">
+                      <div class="module">
+                        <img src="./img/gradle.png" alt="gradle icon" class="icons">
+                        <br>
+                        <span class="icon_box_text">GRADLE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End of Wrapper-->
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <!----------------END OF BLACK BOX SECTION----------------->
-
-
-
-
-
-      <section class="project-section">
-         <div id="projects">          
-         <h1 id="project_title" style="margin-bottom: -50px;">Projects</h1>
-
-         <br id="project_Slides">
-         <!--Project Tab Tables-->
-         <div class="container">
-            <div class="tabs-btn">
-               <ul>
-                  <!-- note that for attribute of li is the class of respected li -->
-                  <!-- we will use this relation in js -->
-                  <li for="js">Carolina Coffee</li>
-                  <li for="py">Brookhaven</li>
-                  <li for="c">BlueCross BlueShield</li>
-               </ul>
-               <!-- for bottom line -->
-               <div class="line"><span></span></div>
+      </div>
+    </section>
+    <!----------------END OF BLACK BOX SECTION----------------->
+    <section class="project-section">
+      <div id="projects">
+        <h1 id="project_title" style="margin-bottom: -50px;">Projects</h1>
+        <br id="project_Slides">
+        <!--Project Tab Tables-->
+        <div class="container">
+          <div class="tabs-btn">
+            <ul>
+              <!-- note that for attribute of li is the class of respected li -->
+              <!-- we will use this relation in js -->
+              <li for="js">Carolina Coffee</li>
+              <li for="py">Brookhaven</li>
+              <li for="c">BlueCross BlueShield</li>
+            </ul>
+            <!-- for bottom line -->
+            <div class="line">
+              <span></span>
             </div>
-            <div class="tabs-content">
-               <ul>
-
-                  <li class="js active">
-                     <div class="ccimageBox reveal fade-bottom">
-
-
-                      <!------------- PROJECT SLIDES ------------->
-                      <!-- Slideshow container -->
-                      <div class="slideshow-container ">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade" style="align-items: center;">
-                          <img src="./img/carolina_coffee_login.png" style="width:320px; height:520px; position: absolute;">
-                          <img src="./img/carolina_coffee_signup.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
-                          <div class="text"><h1 style="margin-left: 30px;">Login and Register</h1></div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <img src="./img/carolina_home.png" style="width:320px; height:520px; position: absolute;">
-                          <img src="./img/carolina_menu.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
-                          <div class="text"><h1 style="margin-left: 0px;">Home and Menu</h1></div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <img src="./img/carolina_history.png" style="width:320px; height:520px; position: absolute;">
-                          <img src="./img/carolina_payments.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
-                          <div class="text"><h1 style="margin-left: 40px;">History and Payments</h1></div>
-                        </div>
-
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)" style="margin-top: -70px;">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)" style="margin-top: -70px;">&#10095;</a>
+          </div>
+          <div class="tabs-content">
+            <ul>
+              <li class="js active">
+                <div class="ccimageBox reveal fade-bottom">
+                  <!------------- PROJECT SLIDES ------------->
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container ">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade" style="align-items: center;">
+                      <img src="./img/carolina_coffee_login.png" style="width:320px; height:520px; position: absolute;">
+                      <img src="./img/carolina_coffee_signup.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
+                      <div class="text">
+                        <h1 style="margin-left: 30px;">Login and Register</h1>
                       </div>
-                      
-                      <br>
-
-                      <!-- The dots/circles -->
-                      <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="./img/carolina_home.png" style="width:320px; height:520px; position: absolute;">
+                      <img src="./img/carolina_menu.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
+                      <div class="text">
+                        <h1 style="margin-left: 0px;">Home and Menu</h1>
                       </div>
-
-                      <script>
-                        /*   Project Sliding Images   */
-                        let slideIndex = 1;
-                        showSlides(slideIndex);
-                        // Next/previous controls
-                        function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                        }
-                        // Thumbnail image controls
-                        function currentSlide(n) {
-                          showSlides(slideIndex = n);
-                        }
-                        function showSlides(n) {
-                          let i;
-                          let slides = document.getElementsByClassName("mySlides");
-                          let dots = document.getElementsByClassName("dot");
-                          if (n > slides.length) {slideIndex = 1}
-                          if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                          }
-                          for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" activeDot", "");
-                          }
-                          slides[slideIndex-1].style.display = "block";
-                          dots[slideIndex-1].className += " activeDot";
-                        }
-                      </script>
-                      <!-------  END OF PROJECT SLIDES -------->
-
-
-
-                      <div class="ccimageBoxTitle">
-                        <h1 id="project_title" style="font-weight: 200">Carolina Coffee</h1>
-                        <h1 style="font-weight: 100">USC Capstone 2022</h1>
-                        <br>
-                        <p>
-                          Carolina Coffee is a mobile Android app for Ordering Coffee!
-                        </p>
-                        <br>
-                        <h2 id="technology1">Technology used:</h2>
-                        <ul><span id="framework1">Framework: </span> Android</ul>
-                        <ul><span id="languages1">Languages: </span> Java</ul>
-                        <ul><span id="ide1">IDE: </span> Android Studio</ul>
-                        <ul><span id="backend1"> Backend Server: </span> Firebase</ul>
-                        <ul><span id="api1">API: </span> Google Geolocation API</ul>
-                        <br>
-                        <a class="buttonLink" href="https://github.com/SCCapstone/capstone22" target="_blank">GITHUB LINK</a>
-                        <br>
-                        <br>
-                        <a class="buttonLink" href="https://github.com/SCCapstone/capstone22/wiki/Design" target="_blank">DESIGN LINK</a>
-
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="./img/carolina_history.png" style="width:320px; height:520px; position: absolute;">
+                      <img src="./img/carolina_payments.png" style="width:320px; height:520px; position: absolute; margin-left: 400px;">
+                      <div class="text">
+                        <h1 style="margin-left: 40px;">History and Payments</h1>
                       </div>
-                     </div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)" style="margin-top: -70px;">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" style="margin-top: -70px;">&#10095;</a>
+                  </div>
+                  <br>
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                  <script>
+                    /*   Project Sliding Images   */
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    // Next/previous controls
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {
+                        slideIndex = 1
+                      }
+                      if (n < 1) {
+                        slideIndex = slides.length
+                      }
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" activeDot", "");
+                      }
+                      slides[slideIndex - 1].style.display = "block";
+                      dots[slideIndex - 1].className += " activeDot";
+                    }
+                  </script>
+                  <!-------  END OF PROJECT SLIDES -------->
+                  <div class="ccimageBoxTitle">
+                    <h1 id="project_title" style="font-weight: 200">Carolina Coffee</h1>
+                    <h1 style="font-weight: 100">USC Capstone 2022</h1>
+                    <br>
+                    <p> Carolina Coffee is a mobile Android app for Ordering Coffee! </p>
+                    <br>
+                    <h2 id="technology1">Technology used:</h2>
+                    <ul><span id="framework1">Framework: </span> Android</ul>
+                    <ul><span id="languages1">Languages: </span> Java</ul>
+                    <ul><span id="ide1">IDE: </span> Android Studio</ul>
+                    <ul><span id="backend1"> Backend Server: </span> Firebase</ul>
+                    <ul><span id="api1">API: </span> Google Geolocation API</ul>
+                    <br>
+                    <a class="buttonLink" href="https://github.com/SCCapstone/capstone22" target="_blank">GITHUB LINK</a>
+                    <br>
+                    <br>
+                    <a class="buttonLink" href="https://github.com/SCCapstone/capstone22/wiki/Design" target="_blank">DESIGN LINK</a>
+                  </div>
+                </div>
+              </li>
 
 
-                  </li>
-
-
-                  <!------------  BROOKHAVEN PROJECT  ------------>
-                  <li class="py">
-                    <div class="ccimageBox reveal fade-bottom">
-                      <!------------- PROJECT SLIDES ------------->
-                      <!-- Slideshow container -->
-                      <div class="slideshow-container ">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides2 fade" style="align-items: center;">
-                          <img src="./img/brookhaven_menu.png" style="width:720px; height:520px; position: absolute;">
-                          <div class="text"><h1 style="margin-left: 30px;">Main Menu</h1></div>
-                        </div>
-
-                        <div class="mySlides2 fade">
-                          <img src="./img/brookhaven_menu2.png" style="width:720px; height:520px; position: absolute;">
-
-                          <div class="text"><h1 style="margin-left: 0px;">Settings</h1></div>
-                        </div>
-
-                        <div class="mySlides2 fade">
-                          <img src="./img/brookhaven_pyramid.png" style="width:500px; height:520px; position: absolute; margin-left: 220px; border: 2px solid red;">
-                          <img src="./img/brookhaven_desert1.png" style="width:250px; height:520px; position: absolute; margin-left: 0px; border: 2px solid red;">
-                          <img src="./img/portal1.gif" style="width:200px; height:220px; position: absolute; margin-left: -40px; margin-top: 330px;" id="img" class="img">
-                          <div class="text"><h1 style="margin-left: 40px;">Quests and Animations</h1></div>
-                        </div>
-
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides2(-1)" style="margin-top: -70px;">&#10094;</a>
-                        <a class="next" onclick="plusSlides2(1)" style="margin-top: -70px;">&#10095;</a>
+              <!------------  BROOKHAVEN PROJECT  ------------>
+              <li class="py">
+                <div class="ccimageBox reveal fade-bottom">
+                  <!------------- PROJECT SLIDES ------------->
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container ">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides2 fade" style="align-items: center;">
+                      <img src="./img/brookhaven_menu.png" style="width:720px; height:520px; position: absolute;">
+                      <div class="text">
+                        <h1 style="margin-left: 30px;">Main Menu</h1>
                       </div>
-                      
-                      <br>
-
-                      <!-- The dots/circles
-                      <div style="text-align:center">
-                        <span class="dot2" onclick="currentSlide2(1)"></span>
-                        <span class="dot2" onclick="currentSlide2(2)"></span>
-                        <span class="dot2" onclick="currentSlide2(3)"></span>
-                      </div>-->
-
-                      <script>
-                        /*   Project Sliding Images   */
-                        let slideIndex2 = 1;
-                        showSlides2(slideIndex2);
-                        // Next/previous controls
-                        function plusSlides2(n) {
-                          showSlides2(slideIndex2 += n);
-                        }
-                        // Thumbnail image controls
-                        function currentSlide2(n) {
-                          showSlides2(slideIndex2 = n);
-                        }
-                        function showSlides2(n) {
-                          let i;
-                          let slides2 = document.getElementsByClassName("mySlides2");
-                          let dots2 = document.getElementsByClassName("dot2");
-                          if (n > slides2.length) {slideIndex2 = 1}
-                          if (n < 1) {slideIndex2 = slides2.length}
-                          for (i = 0; i < slides2.length; i++) {
-                            slides2[i].style.display = "none";
-                          }
-                          for (i = 0; i < dots2.length; i++) {
-                            dots2[i].className = dots2[i].className.replace(" activeDot", "");
-                          }
-                          slides2[slideIndex2-1].style.display = "block";
-                          dots2[slideIndex2-1].className += " activeDot";
-                        }
-                      </script>
-                      <!-------  END OF PROJECT SLIDES -------->
-
-                      <div class="ccimageBoxTitle">
-                        <h1 id="project_title" style="font-weight: 200">Brookhaven</h1>
-                        <h1 style="font-weight: 100">Published Steam Game</h1>
-                        <br>
-                        <p>Brookhaven is a 2D magical storytelling adventure game.</p>
-                        <P>I helped create the user-interface, a side quest, and animations.</P>
-                        <br>
-                        <h2 id="technology1">Technology used:</h2>
-                        <ul><span id="ide1">IDE: </span> Game Studio Maker 2</ul>
-                        <ul><span id="languages1">Skills: </span> UI Design, Photoshop, Animations</ul>
-                        <ul><span id="backend1"> Languages : </span> GML (Similar to JS & C++)</ul>
-                        <br>
-                        <a class="buttonLink" href="https://store.steampowered.com/app/1499240/Brookhaven_Grimoire/" target="_blank">STORE LINK</a>
-                        <br>
-
+                    </div>
+                    <div class="mySlides2 fade">
+                      <img src="./img/brookhaven_menu2.png" style="width:720px; height:520px; position: absolute;">
+                      <div class="text">
+                        <h1 style="margin-left: 0px;">Settings</h1>
                       </div>
-                     </div>
-                  </li>
-                  <!------------  END OF BROOKHAVEN PROJECT  ------------>
-
-
-
-
-
-
-                  <!------------  BLUE CROSS BLUE SHIELD PROJECT  ------------>
-                  <li class="c">
-                    <div class="ccimageBox reveal fade-bottom">
-                      <!------------- PROJECT SLIDES ------------->
-                      <!-- Slideshow container -->
-                      <div class="slideshow-container ">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides3 fade" style="align-items: center;">
-                          <img src="./img/conversion_jwt.png" style="width:720px; height:520px; position: absolute;">
-                        </div>
-
-                        <div class="mySlides3 fade">
-                          <img src="./img/web_service_queue.png" style="width:720px; height:520px; position: absolute;">
-                        </div>
-
-                        <div class="mySlides3 fade">
-                          <img src="./img/maven_gradle.png" style="width:720px; height:520px; position: absolute;">
-                          <div class="text"><h1 style="margin-left: 40px;">Maven Vs. Gradle</h1></div>
-                        </div>
-
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides3(-1)" style="margin-top: -70px;">&#10094;</a>
-                        <a class="next" onclick="plusSlides3(1)" style="margin-top: -70px;">&#10095;</a>
+                    </div>
+                    <div class="mySlides2 fade">
+                      <img src="./img/brookhaven_pyramid.png" style="width:500px; height:520px; position: absolute; margin-left: 220px; border: 2px solid red;">
+                      <img src="./img/brookhaven_desert1.png" style="width:250px; height:520px; position: absolute; margin-left: 0px; border: 2px solid red;">
+                      <img src="./img/portal1.gif" style="width:200px; height:220px; position: absolute; margin-left: -40px; margin-top: 330px;" id="img" class="img">
+                      <div class="text">
+                        <h1 style="margin-left: 40px;">Quests and Animations</h1>
                       </div>
-                      
-                      <br>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides2(-1)" style="margin-top: -70px;">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)" style="margin-top: -70px;">&#10095;</a>
+                  </div>
+                  <br>
+                  <script>
+                    /*   Project Sliding Images   */
+                    let slideIndex2 = 1;
+                    showSlides2(slideIndex2);
+                    // Next/previous controls
+                    function plusSlides2(n) {
+                      showSlides2(slideIndex2 += n);
+                    }
+                    // Thumbnail image controls
+                    function currentSlide2(n) {
+                      showSlides2(slideIndex2 = n);
+                    }
 
-                      <!-- The dots/circles
-                      <div style="text-align:center">
-                        <span class="dot2" onclick="currentSlide2(1)"></span>
-                        <span class="dot2" onclick="currentSlide2(2)"></span>
-                        <span class="dot2" onclick="currentSlide2(3)"></span>
-                      </div>-->
+                    function showSlides2(n) {
+                      let i;
+                      let slides2 = document.getElementsByClassName("mySlides2");
+                      let dots2 = document.getElementsByClassName("dot2");
+                      if (n > slides2.length) {
+                        slideIndex2 = 1
+                      }
+                      if (n < 1) {
+                        slideIndex2 = slides2.length
+                      }
+                      for (i = 0; i < slides2.length; i++) {
+                        slides2[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots2.length; i++) {
+                        dots2[i].className = dots2[i].className.replace(" activeDot", "");
+                      }
+                      slides2[slideIndex2 - 1].style.display = "block";
+                      dots2[slideIndex2 - 1].className += " activeDot";
+                    }
+                  </script>
+                  <!-------  END OF PROJECT SLIDES -------->
+                  <div class="ccimageBoxTitle">
+                    <h1 id="project_title" style="font-weight: 200">Brookhaven</h1>
+                    <h1 style="font-weight: 100">Published Steam Game</h1>
+                    <br>
+                    <p>Brookhaven is a 2D magical storytelling adventure game.</p>
+                    <P>I helped create the user-interface, a side quest, and animations.</P>
+                    <br>
+                    <h2 id="technology1">Technology used:</h2>
+                    <ul><span id="ide1">IDE: </span> Game Studio Maker 2</ul>
+                    <ul><span id="languages1">Skills: </span> UI Design, Photoshop, Animations</ul>
+                    <ul><span id="backend1"> Languages : </span> GML (Similar to JS & C++)</ul>
+                    <br>
+                    <a class="buttonLink" href="https://store.steampowered.com/app/1499240/Brookhaven_Grimoire/" target="_blank">STORE LINK</a>
+                    <br>
+                  </div>
+                </div>
+              </li>
+              <!------------  END OF BROOKHAVEN PROJECT  ------------>
 
-                      <script>
-                        /*   Project Sliding Images   */
-                        let slideIndex3 = 1;
-                        showSlides3(slideIndex3);
-                        // Next/previous controls
-                        function plusSlides3(n) {
-                          showSlides3(slideIndex3 += n);
-                        }
-                        // Thumbnail image controls
-                        function currentSlide3(n) {
-                          showSlides3(slideIndex3 = n);
-                        }
-                        function showSlides3(n) {
-                          let i;
-                          let slides3 = document.getElementsByClassName("mySlides3");
-                          let dots3 = document.getElementsByClassName("dot3");
-                          if (n > slides3.length) {slideIndex3 = 1}
-                          if (n < 1) {slideIndex3 = slides3.length}
-                          for (i = 0; i < slides3.length; i++) {
-                            slides3[i].style.display = "none";
-                          }
-                          for (i = 0; i < dots3.length; i++) {
-                            dots3[i].className = dots3[i].className.replace(" activeDot", "");
-                          }
-                          slides3[slideIndex3-1].style.display = "block";
-                          dots3[slideIndex3-1].className += " activeDot";
-                        }
-                      </script>
-                      <!-------  END OF PROJECT SLIDES -------->
 
-                      <div class="ccimageBoxTitle">
-                        <h1 id="project_title" style="font-weight: 200">BlueCross BlueShield</h1>
-                        <h1 style="font-weight: 100">Commercial Web Team Intern 2022</h1>
-                        <h1 style="font-weight: 100">Manager: Shawn Williams</h1>
-                        <br>
-                        <p>Created and designed HTML Google Chrome extensions to</p>
-                        <P>work with and debug commercial websites.</P>
-                        <P>Converted large commercial websites from Maven to Gradle.</P>
-                        <br>
-                        <h2 id="technology1">Technology used:</h2>
-                        <ul><span id="languages1">Languages: </span> Java, JavaScript, HTML, CSS, </ul>
-                        <ul><span id="ide1">IDE: </span> Intellij, Visual Studio Code</ul>
-                        <ul><span id="backend1"> Tools Used: </span> Splunk, Maven, Gradle</ul>
-                        <br>
-                        <a class="buttonLink"  target="_blank">GITHUB LINK -> (Locked with BCBSSC)</a>
-                        <br>
-
+              <!------------  BLUE CROSS BLUE SHIELD PROJECT  ------------>
+              <li class="c">
+                <div class="ccimageBox reveal fade-bottom">
+                  <!------------- PROJECT SLIDES ------------->
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container ">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides3 fade" style="align-items: center;">
+                      <img src="./img/conversion_jwt.png" style="width:720px; height:520px; position: absolute;">
+                    </div>
+                    <div class="mySlides3 fade">
+                      <img src="./img/web_service_queue.png" style="width:720px; height:520px; position: absolute;">
+                    </div>
+                    <div class="mySlides3 fade">
+                      <img src="./img/maven_gradle.png" style="width:720px; height:520px; position: absolute;">
+                      <div class="text">
+                        <h1 style="margin-left: 40px;">Maven Vs. Gradle</h1>
                       </div>
-                     </div>
-                  </li>
-                  <!------------  END OF BLUE CROSS BLUE SHIELD PROJECT  ------------>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides3(-1)" style="margin-top: -70px;">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)" style="margin-top: -70px;">&#10095;</a>
+                  </div>
+                  <br>
+                  <!-- The dots/circles
+                      <div style="text-align:center"><span class="dot2" onclick="currentSlide2(1)"></span><span class="dot2" onclick="currentSlide2(2)"></span><span class="dot2" onclick="currentSlide2(3)"></span></div>-->
+                  <script>
+                    /*   Project Sliding Images   */
+                    let slideIndex3 = 1;
+                    showSlides3(slideIndex3);
+                    // Next/previous controls
+                    function plusSlides3(n) {
+                      showSlides3(slideIndex3 += n);
+                    }
+                    // Thumbnail image controls
+                    function currentSlide3(n) {
+                      showSlides3(slideIndex3 = n);
+                    }
 
-               </ul>
+                    function showSlides3(n) {
+                      let i;
+                      let slides3 = document.getElementsByClassName("mySlides3");
+                      let dots3 = document.getElementsByClassName("dot3");
+                      if (n > slides3.length) {
+                        slideIndex3 = 1
+                      }
+                      if (n < 1) {
+                        slideIndex3 = slides3.length
+                      }
+                      for (i = 0; i < slides3.length; i++) {
+                        slides3[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots3.length; i++) {
+                        dots3[i].className = dots3[i].className.replace(" activeDot", "");
+                      }
+                      slides3[slideIndex3 - 1].style.display = "block";
+                      dots3[slideIndex3 - 1].className += " activeDot";
+                    }
+                  </script>
+                  <!-------  END OF PROJECT SLIDES -------->
+                  <div class="ccimageBoxTitle">
+                    <h1 id="project_title" style="font-weight: 200">BlueCross BlueShield</h1>
+                    <h1 style="font-weight: 100">Commercial Web Team Intern 2022</h1>
+                    <h1 style="font-weight: 100">Manager: Shawn Williams</h1>
+                    <br>
+                    <p>Created and designed HTML Google Chrome extensions to</p>
+                    <P>work with and debug commercial websites.</P>
+                    <P>Converted large commercial websites from Maven to Gradle.</P>
+                    <br>
+                    <h2 id="technology1">Technology used:</h2>
+                    <ul><span id="languages1">Languages: </span> Java, JavaScript, HTML, CSS,</ul>
+                    <ul><span id="ide1">IDE: </span> Intellij, Visual Studio Code</ul>
+                    <ul><span id="backend1"> Tools Used: </span> Splunk, Maven, Gradle</ul>
+                    <br>
+                    <a class="buttonLink" target="_blank">GITHUB LINK -> (Locked with BCBSSC)</a>
+                    <br>
+                  </div>
+                </div>
+              </li>
+              <!------------  END OF BLUE CROSS BLUE SHIELD PROJECT  ------------>
+            </ul>
+          </div>
+        </div>
+    </section>
 
-        
+
+
+
+    <!-- CONTACT SECTION-->
+    <section class="connect-section" id="connect">
+      <div class="ontop">
+        <div class="float-container">
+          <div class="float-child">
+            <div class="green">
+              <div id="about_left">
+                <div class="float-grand-child">
+                  <img src="./img/contact-img.svg" style="height: 600px; width: 600px; margin-top: 80px" id="contact-img">
+                </div>
+              </div>
             </div>
-         </div>
-      </section>
-
-
-
-
-      <!-- CONTACT SECTION-->
-      <section class="connect-section" id="connect">
-        
-
-            <div class="ontop">
-              <div class="float-container">
-
-
-
-                <div class="float-child">
-                  <div class="green">
-                    <div id="about_left">
-                      <div class="float-grand-child">
-                        <img src="./img/contact-img.svg" style="height: 600px; width: 600px; margin-top: 80px" id="contact-img">
+          </div>
+          <!--End of Wrapper-->
+          <div class="float-child">
+            <div class="blue">
+              <div id="about_right">
+                <h1 id="contact_title" style="text-align:left; margin-top: 240px; margin-left: 100px;">Contact</h1>
+                <br>
+                <div id="contact_p">
+                  <p>Have a question about my work?</p>
+                  <p>You may contact me through the options below</p>
+                </div>
+                <br>
+                <br>
+                <!--  CONTACT DETAILS BUTTONS  -->
+                <div class="wrapper2">
+                  <div class="items">
+                    <div class="mail">
+                      <div class="mail-module-border-wrap">
+                        <div class="mail-module">
+                          <div class="img-hover-zoom">
+                            <img src="./img/mail_button.png" style="width:50px; height: 50px;" alt="java icon" class="icons">
+                          </div>
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-15px; ">MAIL</span>
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-20px; ">chw5225@gmail.com</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div><!--End of Wrapper-->
-                
-
-
-
-                <div class="float-child">
-                  <div class="blue">
-                    <div id="about_right">
-                      <h1 id="contact_title" style="text-align:left; margin-top: 240px; margin-left: 100px;">Contact</h1>
-                      <br>
-                      <div id="contact_p" >
-                        <p>Have a question about my work?</p>
-                        <p>You may contact me through the options below</p>
-                      </div>
-                      
-                      <br><br>
-
-                      <!--  CONTACT DETAILS BUTTONS  -->
-                      <div class="wrapper2">
-                        <div class="items">
-                          <div class="mail">
-                            <div class="mail-module-border-wrap">
-                              <div class="mail-module">
-                                <div class="img-hover-zoom">
-                                  <img src="./img/mail_button.png" style="width:50px; height: 50px;" alt="java icon" class="icons">
-                                </div>
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-15px; ">MAIL</span>
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-20px; ">chw5225@gmail.com</span>
-                              </div>
-                            </div>
-                          </div>
+                  <div class="items contents">
+                    <div class="phone">
+                      <div class="mail-module-border-wrap">
+                        <div class="mail-module">
+                          <img src="./img/telephone.png" style="width:50px; height: 50px;" alt="java icon" class="icons">
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-15px; ">PHONE</span>
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-20px; ">912-323-6868</span>
                         </div>
-
-
-                        <div class="items contents">
-                          <div class="phone">
-                            <div class="mail-module-border-wrap">
-                              <div class="mail-module">
-                                <img src="./img/telephone.png" style="width:50px; height: 50px;" alt="java icon" class="icons">
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-15px; ">PHONE</span>
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-20px; ">912-323-6868</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
-                        <aside class="items">
-                          <div class="git">
-                            <div class="mail-module-border-wrap">
-                              <div class="mail-module">
-                                <img src="./img/github_button.png" style="width:50px; height: 50px;" alt="java icon" class="icons" >
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-15px; ">GITHUB</span>
-                                <br>
-                                <span class="icon_Mail_text" style="margin-top:-20px; ">WestDrop</span>
-                              </div>
-                            </div>
-                          </div>
-                        </aside>
                       </div>
-                      <!--  END OF ONTACT DETAILS BUTTONS  -->  
-                      <br>
-
-
-                    </div><!--End of Wrapper-->
+                    </div>
                   </div>
+                  <aside class="items">
+                    <div class="git">
+                      <div class="mail-module-border-wrap">
+                        <div class="mail-module">
+                          <img src="./img/github_button.png" style="width:50px; height: 50px;" alt="java icon" class="icons">
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-15px; ">GITHUB</span>
+                          <br>
+                          <span class="icon_Mail_text" style="margin-top:-20px; ">WestDrop</span>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
                 </div>
-              </div><!--End of Container-->
+                <!--  END OF ONTACT DETAILS BUTTONS  -->
+                <br>
+              </div>
+              <!--End of Wrapper-->
             </div>
-            <div class="jscanvas">
-              <canvas2 class="webgl2"></canvas2>
-           </div>
-      </section>
-      
+          </div>
+        </div>
+        <!--End of Container-->
+      </div>
+      <div class="jscanvas">
+        <canvas2 class="webgl2"></canvas2>
+      </div>
+    </section>
 
-      
-      
 
-      <footer>
-         <a href="#" class="logo2"><img src="./img/logo.svg" alt="Logo"></a>
-         <p>2022 © Christopher Wynne</p>
-         <div class="social">
-            <a>
-            <i class=""></i>
-            </a>
-         </div>
-      </footer>
-   </body>
+    <footer>
+      <a href="#" class="logo2">
+        <img src="./img/logo.svg" alt="Logo">
+      </a>
+      <p>2022 © Christopher Wynne</p>
+      <div class="social">
+        <a>
+          <i class=""></i>
+        </a>
+      </div>
+    </footer>
+
+
+  </body>
 </html>
