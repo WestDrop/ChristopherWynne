@@ -120,7 +120,6 @@ function bottomLineAnimation(e) {
 			tabsLine.style.width = targetRect.width + 'px'
 			tabsLine.style.left = targetRect.x + 'px'
 		}, cssTransDuration * 1000);
-		// .2*1000 = 200
 	} else {
 		// if left btn is clicked
 		tabsLine.style.width = (lineRect.x - targetRect.x) + lineRect.width + 'px'
@@ -139,8 +138,6 @@ function hideAll() {
 /**
  * END OF TAB BUTTONS FOR PROJECTS------^^
  */
-
-
 
 
 
@@ -170,19 +167,11 @@ window.addEventListener("scroll", function() {
 
 
 
-
-
-
-
-
-
-
-// Canvas
+/**
+ * Establish scene and canvas.
+ */
 const canvas = document.querySelector('canvas.webgl')
-
-// Scene
 const scene = new THREE.Scene()
-
 
 /**
  * stars geometry 
@@ -222,7 +211,6 @@ for (var z = 0; z < 200; z += 1) {
 	mesh9.position.y = Math.random() * -20 - 2;
 	mesh9.position.z = Math.random() * -20 - 2;
 	scene.add(mesh9);
-
 }
 
 /**
@@ -232,8 +220,9 @@ const sizes = {
 	width: window.innerWidth,
 	height: 1000
 }
-
-
+/**
+ * Window resize event listener
+ */
 window.addEventListener('resize', () => {
 	// Update sizes
 	sizes.width = window.innerWidth
@@ -246,20 +235,16 @@ window.addEventListener('resize', () => {
 	// Update renderer
 	renderer.setSize(sizes.width, sizes.height)
 	renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-
-
 })
 
 /**
  * Camera
  */
-// Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
 camera.position.x = -10
 camera.position.y = -10
 camera.position.z = 0
 scene.add(camera)
-
 
 /**
  * Renderer
@@ -273,11 +258,9 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
-
-
-
-
-
+/**
+ * Clock / animation
+ */
 const clock = new THREE.Clock()
 let previousTime = 0
 
@@ -286,17 +269,9 @@ const tick = () => {
 	const deltaTime = elapsedTime - previousTime
 	previousTime = elapsedTime
 
-	//boxMesh.rotateX(30*0.0003)
-	//boxMesh.rotateY(30*0.0003)
-	//sphereMesh.rotateY(30*0.0003)
-	// mesh.position.y = Math.sin(elapsedTime) *0.1
-	//boxMesh.position.z = Math.sin(elapsedTime) * 1
-
-
 	camera.rotation.x = Math.cos(elapsedTime) * 0.006;
 	camera.rotation.y = Math.sin(elapsedTime) * 0.009;
 	camera.rotation.z = (elapsedTime) * 0.0002;
-
 
 	renderer.render(scene, camera)
 	window.requestAnimationFrame(tick)
